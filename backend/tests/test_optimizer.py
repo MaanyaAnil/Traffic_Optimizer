@@ -1,5 +1,10 @@
 # tests/test_optimizer.py
 from optimizer import dynamic_signal_timing
+import sys
+import os
+
+# Add the backend directory to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "C:\Maanya\SEM 4\Traffic_Optimizer\backend\optimizer.py")))
 
 def test_dynamic_signal_timing_normal():
     """

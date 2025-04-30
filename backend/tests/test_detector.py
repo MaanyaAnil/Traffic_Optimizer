@@ -3,6 +3,12 @@ import cv2
 import numpy as np
 from detector import process_video_with_yolov8
 from detector import detect_vehicles
+import sys
+import os
+
+# Add the backend directory to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "C:\Maanya\SEM 4\Traffic_Optimizer\backend\detector.py")))
+
 
 def test_vehicle_detection_valid_video():
     video_path = "test_video.mp4"
