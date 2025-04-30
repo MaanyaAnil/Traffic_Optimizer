@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+
+# Environment and config
+.env
+*.log
+
+# VSCode
+.vscode/
+
+# Output folders
+backend/upload/
+backend/uploads/
+backend/processed_upload/
+backend/processed_videos/
+backend/processed_video.mp4
+*.mp4
+
+# Node
+node_modules/
+dist/
+
+# Git LFS tracked files (if using Git LFS correctly, but we’re avoiding heavy files anyway)
+*.psd
+*.bin
+*.h5
+*.pt
+*.onnx
+
+# System files
+.DS_Store
+Thumbs.db
