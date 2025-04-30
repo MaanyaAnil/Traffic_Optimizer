@@ -5,15 +5,13 @@ on: [push]
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.11  # ✅ Change this to a supported version
+          python-version: 3.11  # 👈 GitHub Actions supports this version
 
       - name: Install dependencies
         run: |
